@@ -1,0 +1,49 @@
+/* === DISEÑO GENERAL === */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f7;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* === ENCABEZADO === */
+header {
+  background-color: #800020; /* Guinda oscuro */
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  font-size: 28px;
+  margin: 0;
+}
+
+/* === TARJETA CENTRAL === */
+.tarjeta-semana {
+  max-width: 850px;
+  margin: 40px auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* === BOTÓN DE REGRESO === */
+.regresar {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.regresar a {
+  color: #800020;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.regresar a:hover {
+  text-decoration: underline;
+}
