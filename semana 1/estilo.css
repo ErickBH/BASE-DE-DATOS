@@ -88,3 +88,25 @@ header h1 {
 .regresar a:hover {
   text-decoration: underline;
 }
+
+/* === IMÁGENES Y DESCRIPCIONES === */
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.image-container img {
+  width: 50%; /* Ajusta al tamaño que prefieras */
+  height: auto;
+  border: 2px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.image-container p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #800020;
+  text-align: center;
+}
