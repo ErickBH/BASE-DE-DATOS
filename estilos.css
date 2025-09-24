@@ -66,3 +66,24 @@ button {
 button:hover {
   background-color: #660016;  /* Color guinda más oscuro en hover */
 }
+/* Contenedor del logo y el nombre */
+.logo-nombre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+/* Imagen del logo */
+.logo-nombre img {
+  width: 80px;
+  height: auto;
+  border-radius: 8px; /* Opcional: redondea los bordes */
+}
+
+/* Nombre en el encabezado */
+.logo-nombre h1 {
+  margin: 0;
+  font-size: 1.8em;
+}
