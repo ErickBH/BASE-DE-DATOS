@@ -80,7 +80,6 @@ button:hover {
   width: 80px;
   height: auto;
   border-radius: 8px; /* Opcional: redondea los bordes */
-  filter: invert(100%) brightness(100%); /* Aplica el filtro de inversión de color */
 }
 
 /* Nombre en el encabezado */
