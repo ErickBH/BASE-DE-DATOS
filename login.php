@@ -8,7 +8,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="style.css" />
-    <title>login CSS</title>
+    <title>estilos.CSS</title>
   </head>
   <body>
     <div class="container" id="container">
@@ -75,3 +75,4 @@
     <script src="app.js"></script>
   </body>
 </html>
+
