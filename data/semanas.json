@@ -42,7 +42,7 @@
     {
       "numero": 3,
       "titulo": "Cuadro Comparativo",
-      "descripcion": "",
+      "descripcion": "es una evolución que busca la eficiencia y la simplicidad operacional al unificar varios modelos de datos distintos (Documento, Grafo, Clave-Valor) dentro de un solo núcleo de motor de base de datos.",
       "actividades": [
         {
           "nombre": "cuadro",
