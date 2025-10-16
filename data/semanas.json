@@ -1,0 +1,106 @@
+{
+  "semanas": [
+    {
+      "numero": 1,
+      "titulo": "Manual para crear una cuanta en GitHub",
+      "descripcion": "GitHub es una plataforma donde podemos guardar y compartir nuestros proyectos. En este manual aprenderás de forma sencilla cómo crear tu cuenta paso a paso para empezar a usarla.",
+      "actividades": [
+        {
+          "nombre": "github",
+          "archivo": "github.pdf",
+          "url": "https://raw.githubusercontent.com/ErickBH/BASE-DE-DATOS/main/semana%201/github.pdf"
+        }
+      ]
+    },
+    {
+      "numero": 2,
+      "titulo": "",
+      "descripcion": "",
+      "actividades": []
+    },
+    {
+      "numero": 3,
+      "titulo": "",
+      "descripcion": "",
+      "actividades": []
+    },
+    {
+      "numero": 4,
+      "titulo": "",
+      "descripcion": "",
+      "actividades": []
+    },
+    {
+      "numero": 5,
+      "titulo": "",
+      "descripcion": "",
+      "actividades": []
+    },
+    {
+      "numero": 6,
+      "titulo": "",
+      "descripcion": "",
+      "actividades": []
+    },
+    {
+      "numero": 7,
+      "titulo": "",
+      "descripcion": "",
+      "actividades": []
+    },
+    {
+      "numero": 8,
+      "titulo": "",
+      "descripcion": "",
+      "actividades": []
+    },
+    {
+      "numero": 9,
+      "titulo": "",
+      "descripcion": "",
+      "actividades": []
+    },
+    {
+      "numero": 10,
+      "titulo": "",
+      "descripcion": "",
+      "actividades": []
+    },
+    {
+      "numero": 11,
+      "titulo": "",
+      "descripcion": "",
+      "actividades": []
+    },
+    {
+      "numero": 12,
+      "titulo": "",
+      "descripcion": "",
+      "actividades": []
+    },
+    {
+      "numero": 13,
+      "titulo": "",
+      "descripcion": "",
+      "actividades": []
+    },
+    {
+      "numero": 14,
+      "titulo": "",
+      "descripcion": "",
+      "actividades": []
+    },
+    {
+      "numero": 15,
+      "titulo": "",
+      "descripcion": "",
+      "actividades": []
+    },
+    {
+      "numero": 16,
+      "titulo": "",
+      "descripcion": "",
+      "actividades": []
+    }
+  ]
+}
