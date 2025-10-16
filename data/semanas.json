@@ -65,9 +65,15 @@
     },
     {
       "numero": 5,
-      "titulo": "",
-      "descripcion": "",
-      "actividades": []
+      "titulo": "CREAR TU BASE DE DATOS - QhatuPERU",
+      "descripcion": "crear la base de datos QhatuPERU y todas sus tablas y relaciones.",
+      "actividades": [
+        {
+          "nombre": "BASEDEDATOSQhatuPERU",
+          "archivo": "BASEDEDATOSQhatuPERU.pdf",
+          "url": "https://raw.githubusercontent.com/ErickBH/BASE-DE-DATOS/main/semana%205/BASEDEDATOSQhatuPERU.pdf"
+        }
+      ]
     },
     {
       "numero": 6,
