@@ -3,7 +3,7 @@
     {
       "numero": 1,
       "titulo": "informe técnico",
-      "descripcion": "Informe técnico comparativo sobre arquitecturas centralizadas, cliente-servidor y distribuidas",
+      "descripcion": "Informe  técnico comparativo sobre arquitecturas centralizadas, cliente-servidor y distribuidas",
       "actividades": [
         {
           "nombre": "github",
@@ -25,7 +25,7 @@
     {
       "numero": 2,
       "titulo": "Manual para instalar SQL server",
-      "descripcion": "SQL Server es un programa que permite crear y administrar bases de datos. En este manual aprenderás de manera sencilla cómo instalar SQL Server paso a paso para empezar a trabajar con tus propios proyectos de datos.",
+      "descripcion": "SQL Server es un programa que permite crear y administrar bases de datos. En este manual aprenderÃ¡s de manera sencilla cÃ³mo instalar SQL Server paso a paso para empezar a trabajar con tus propios proyectos de datos.",
       "actividades": [
         {
           "nombre": "Manual para instalar SQL server",
