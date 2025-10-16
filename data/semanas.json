@@ -24,9 +24,15 @@
     },
     {
       "numero": 2,
-      "titulo": "",
-      "descripcion": "",
-      "actividades": []
+      "titulo": "Manual para instalar SQL server",
+      "descripcion": "SQL Server es un programa que permite crear y administrar bases de datos. En este manual aprenderás de manera sencilla cómo instalar SQL Server paso a paso para empezar a trabajar con tus propios proyectos de datos.",
+      "actividades": [
+        {
+          "nombre": "Manual para instalar SQL server",
+          "archivo": "Manual para instalar SQL server.pdf",
+          "url": "https://raw.githubusercontent.com/ErickBH/BASE-DE-DATOS/main/semana%202/Manual%20para%20instalar%20SQL%20server.pdf"
+        }
+      ]
     },
     {
       "numero": 3,
