@@ -77,9 +77,15 @@
     },
     {
       "numero": 6,
-      "titulo": "",
-      "descripcion": "",
-      "actividades": []
+      "titulo": "CREAR TU BASE DE DATOS  BdEjemplo06 - BdEjemplo07",
+      "descripcion": "Practica para Crear la base de datos",
+      "actividades": [
+        {
+          "nombre": "BdEjemplo06",
+          "archivo": "BdEjemplo06.pdf",
+          "url": "https://raw.githubusercontent.com/ErickBH/BASE-DE-DATOS/main/semana%206/BdEjemplo06.pdf"
+        }
+      ]
     },
     {
       "numero": 7,
