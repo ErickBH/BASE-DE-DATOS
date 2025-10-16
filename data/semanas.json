@@ -2,8 +2,8 @@
   "semanas": [
     {
       "numero": 1,
-      "titulo": "Manual para subir una magina web",
-      "descripcion": "En este manual aprenderás de forma simple cómo subir tu página web y hacerla visible en internet usando GitHub Pages.",
+      "titulo": "Manual para instalar SQL server",
+      "descripcion": "SQL Server es un programa que permite crear y administrar bases de datos. En este manual aprenderás de manera sencilla cómo instalar SQL Server paso a paso para empezar a trabajar con tus propios proyectos de datos.",
       "actividades": [
         {
           "nombre": "github",
@@ -14,6 +14,11 @@
           "nombre": "trabajo 1",
           "archivo": "trabajo 1.pdf",
           "url": "https://raw.githubusercontent.com/ErickBH/BASE-DE-DATOS/main/semana%201/trabajo%201.pdf"
+        },
+        {
+          "nombre": "aqlserver",
+          "archivo": "aqlserver.pdf",
+          "url": "https://raw.githubusercontent.com/ErickBH/BASE-DE-DATOS/main/semana%201/aqlserver.pdf"
         }
       ]
     },
