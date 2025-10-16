@@ -2,8 +2,8 @@
   "semanas": [
     {
       "numero": 1,
-      "titulo": "Manual para instalar SQL server",
-      "descripcion": "SQL Server es un programa que permite crear y administrar bases de datos. En este manual aprenderás de manera sencilla cómo instalar SQL Server paso a paso para empezar a trabajar con tus propios proyectos de datos.",
+      "titulo": "informe técnico",
+      "descripcion": "Informe técnico comparativo sobre arquitecturas centralizadas, cliente-servidor y distribuidas",
       "actividades": [
         {
           "nombre": "github",
@@ -19,6 +19,11 @@
           "nombre": "aqlserver",
           "archivo": "aqlserver.pdf",
           "url": "https://raw.githubusercontent.com/ErickBH/BASE-DE-DATOS/main/semana%201/aqlserver.pdf"
+        },
+        {
+          "nombre": "Arquitecturas-de-Bases-de-Datos",
+          "archivo": "Arquitecturas-de-Bases-de-Datos.pdf",
+          "url": "https://raw.githubusercontent.com/ErickBH/BASE-DE-DATOS/main/semana%201/Arquitecturas-de-Bases-de-Datos.pdf"
         }
       ]
     },
