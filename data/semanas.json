@@ -81,11 +81,6 @@
       "descripcion": "Practica para Crear la base de datos",
       "actividades": [
         {
-          "nombre": "BdEjemplo06",
-          "archivo": "BdEjemplo06.pdf",
-          "url": "https://raw.githubusercontent.com/ErickBH/BASE-DE-DATOS/main/semana%206/BdEjemplo06.pdf"
-        },
-        {
           "nombre": "BdEjemplo06 (1)",
           "archivo": "BdEjemplo06 (1).pdf",
           "url": "https://raw.githubusercontent.com/ErickBH/BASE-DE-DATOS/main/semana%206/BdEjemplo06%20(1).pdf"
