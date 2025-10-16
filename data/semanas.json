@@ -41,9 +41,15 @@
     },
     {
       "numero": 3,
-      "titulo": "",
+      "titulo": "Cuadro Comparativo",
       "descripcion": "",
-      "actividades": []
+      "actividades": [
+        {
+          "nombre": "cuadro",
+          "archivo": "cuadro.pdf",
+          "url": "https://raw.githubusercontent.com/ErickBH/BASE-DE-DATOS/main/semana%203/cuadro.pdf"
+        }
+      ]
     },
     {
       "numero": 4,
