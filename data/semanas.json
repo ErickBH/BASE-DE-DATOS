@@ -57,11 +57,6 @@
       "descripcion": "Arquitecturas de Base de Datos y su Aplicabilidad Tecnologica",
       "actividades": [
         {
-          "nombre": "Aplicabilidad_tecnológica",
-          "archivo": "Aplicabilidad_tecnológica.pdf",
-          "url": "https://raw.githubusercontent.com/ErickBH/BASE-DE-DATOS/main/semana%204/Aplicabilidad_tecnológica.pdf"
-        },
-        {
           "nombre": "Aplicabilidad",
           "archivo": "Aplicabilidad.pdf",
           "url": "https://raw.githubusercontent.com/ErickBH/BASE-DE-DATOS/main/semana%204/Aplicabilidad.pdf"
