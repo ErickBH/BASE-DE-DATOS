@@ -25,7 +25,7 @@
     {
       "numero": 2,
       "titulo": "RESOLUCION DE LA ACTIVIDAD",
-      "descripcion": "",
+      "descripcion": "El modelo conceptual utilizando el diagrama entidad",
       "actividades": [
         {
           "nombre": "Manual para instalar SQL server",
