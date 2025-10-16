@@ -42,7 +42,7 @@
     {
       "numero": 3,
       "titulo": "Cuadro Comparativo",
-      "descripcion": "es una evoluci贸n que busca la eficiencia y la simplicidad operacional al unificar varios modelos de datos distintos (Documento, Grafo, Clave-Valor) dentro de un solo n煤cleo de motor de base de datos.",
+      "descripcion": "es una evoluci脙鲁n que busca la eficiencia y la simplicidad operacional al unificar varios modelos de datos distintos (Documento, Grafo, Clave-Valor) dentro de un solo n脙潞cleo de motor de base de datos.",
       "actividades": [
         {
           "nombre": "cuadro",
@@ -53,13 +53,13 @@
     },
     {
       "numero": 4,
-      "titulo": "Aplicabilidad Tecnol骻ica",
-      "descripcion": "Arquitecturas de Base de Datos y su Aplicabilidad Tecnol骻ica",
+      "titulo": "Aplicabilidad Tecnol贸gica",
+      "descripcion": "Arquitecturas de Base de Datos y su Aplicabilidad Tecnol贸gica",
       "actividades": [
         {
-          "nombre": "Aplicabilidad_tecnol骻ica",
-          "archivo": "Aplicabilidad_tecnol骻ica.pdf",
-          "url": "https://raw.githubusercontent.com/ErickBH/BASE-DE-DATOS/main/semana%204/Aplicabilidad_tecnol骻ica.pdf"
+          "nombre": "Aplicabilidad_tecnol贸gica",
+          "archivo": "Aplicabilidad_tecnol贸gica.pdf",
+          "url": "https://raw.githubusercontent.com/ErickBH/BASE-DE-DATOS/main/semana%204/Aplicabilidad_tecnol贸gica.pdf"
         }
       ]
     },
@@ -84,6 +84,11 @@
           "nombre": "BdEjemplo06",
           "archivo": "BdEjemplo06.pdf",
           "url": "https://raw.githubusercontent.com/ErickBH/BASE-DE-DATOS/main/semana%206/BdEjemplo06.pdf"
+        },
+        {
+          "nombre": "BdEjemplo06 (1)",
+          "archivo": "BdEjemplo06 (1).pdf",
+          "url": "https://raw.githubusercontent.com/ErickBH/BASE-DE-DATOS/main/semana%206/BdEjemplo06%20(1).pdf"
         }
       ]
     },
