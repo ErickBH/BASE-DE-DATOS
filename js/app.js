@@ -24,36 +24,20 @@ async function initApp() {
 }
 
 // ============================================
-// CARGAR DATOS
+// CARGAR DATOS DESDE GITHUB
 // ============================================
 async function loadData() {
-    console.log('📥 Cargando datos...');
+    console.log('📥 Cargando datos desde GitHub...');
     
-    // Intentar cargar desde localStorage
-    const stored = localStorage.getItem('portafolio_bd_data');
-    
-    if (stored) {
-        currentData = JSON.parse(stored);
-        console.log('✅ Datos cargados desde localStorage');
-    } else {
-        // Crear datos por defecto
-        currentData = {
-            semanas: []
-        };
-        
-        // Crear 16 semanas vacías
-        for (let i = 1; i <= 16; i++) {
-            currentData.semanas.push({
-                numero: i,
-                titulo: '',
-                descripcion: '',
-                actividades: []
-            });
-        }
-        
-        // Guardar en localStorage
-        localStorage.setItem('portafolio_bd_data', JSON.stringify(currentData));
-        console.log('✅ Datos iniciales creados');
+    try {
+        // Cargar desde GitHub
+        currentData = await GITHUB_API.getData();
+        console.log('✅ Datos cargados desde GitHub');
+    } catch (error) {
+        console.error('❌ Error al cargar desde GitHub:', error);
+        // Usar datos por defecto si falla
+        currentData = GITHUB_API.getDefaultData();
+        console.log('⚠️ Usando datos por defecto');
     }
     
     console.log('📊 Datos actuales:', currentData);
@@ -114,7 +98,7 @@ function createSemanaCard(semana) {
                 </div>
             ` : ''}
             
-            <a href="https://github.com/ErickBH/BASE-DE-DATOS/tree/main/semanas/semana-${semana.numero}" 
+            <a href="https://github.com/ErickBH/BASE-DE-DATOS/tree/main/semana-${semana.numero}" 
                target="_blank" 
                class="btn-github">
                 🔗 Ver en GitHub
@@ -182,53 +166,75 @@ function setupAdminPanel() {
             return;
         }
         
-        console.log('💾 Guardando cambios...');
+        console.log('💾 Guardando cambios en GitHub...');
         
-        // Actualizar título y descripción
-        currentSemana.titulo = tituloInput.value.trim();
-        currentSemana.descripcion = descripcionInput.value.trim();
+        guardarBtn.textContent = '⏳ Guardando...';
+        guardarBtn.disabled = true;
         
-        // Subir PDF si hay uno seleccionado
-        const file = pdfUpload.files[0];
-        if (file) {
-            if (file.type !== 'application/pdf') {
-                alert('⚠️ Solo se permiten archivos PDF');
-                return;
+        try {
+            // Actualizar título y descripción
+            currentSemana.titulo = tituloInput.value.trim();
+            currentSemana.descripcion = descripcionInput.value.trim();
+            
+            // Subir PDF si hay uno seleccionado
+            const file = pdfUpload.files[0];
+            if (file) {
+                if (file.type !== 'application/pdf') {
+                    alert('⚠️ Solo se permiten archivos PDF');
+                    guardarBtn.textContent = '💾 Guardar Cambios';
+                    guardarBtn.disabled = false;
+                    return;
+                }
+                
+                console.log(`📤 Subiendo PDF: ${file.name}`);
+                
+                // Subir PDF a GitHub
+                const uploadResult = await GITHUB_API.uploadPDF(
+                    currentSemana.numero,
+                    file.name,
+                    file
+                );
+                
+                if (!uploadResult.success) {
+                    throw new Error('Error al subir el PDF a GitHub');
+                }
+                
+                // Agregar actividad con URL de GitHub
+                const actividadNombre = file.name.replace('.pdf', '');
+                currentSemana.actividades.push({
+                    nombre: actividadNombre,
+                    archivo: file.name,
+                    url: uploadResult.url
+                });
+                
+                // Resetear input
+                pdfUpload.value = '';
+                fileName.textContent = '';
+                
+                console.log(`✅ PDF subido correctamente: ${uploadResult.url}`);
             }
             
-            guardarBtn.textContent = '⏳ Guardando...';
-            guardarBtn.disabled = true;
+            // Guardar datos en GitHub
+            const success = await GITHUB_API.saveData(currentData);
             
-            // Crear URL local del archivo
-            const localUrl = URL.createObjectURL(file);
+            if (!success) {
+                throw new Error('Error al guardar en GitHub');
+            }
             
-            // Agregar actividad
-            const actividadNombre = `Actividad ${currentSemana.actividades.length + 1}`;
-            currentSemana.actividades.push({
-                nombre: actividadNombre,
-                archivo: file.name,
-                url: localUrl
-            });
+            // Actualizar vista
+            renderSemanas();
+            renderActividadesAdmin();
             
-            // Resetear input
-            pdfUpload.value = '';
-            fileName.textContent = '';
+            alert('✅ Cambios guardados correctamente en GitHub');
+            console.log('✅ Datos guardados en GitHub');
             
-            console.log(`✅ PDF agregado: ${file.name}`);
+        } catch (error) {
+            console.error('❌ Error al guardar:', error);
+            alert('❌ Error al guardar: ' + error.message);
+        } finally {
+            guardarBtn.textContent = '💾 Guardar Cambios';
+            guardarBtn.disabled = false;
         }
-        
-        // Guardar en localStorage
-        localStorage.setItem('portafolio_bd_data', JSON.stringify(currentData));
-        
-        // Actualizar vista
-        renderSemanas();
-        renderActividadesAdmin();
-        
-        guardarBtn.textContent = '💾 Guardar Cambios';
-        guardarBtn.disabled = false;
-        
-        alert('✅ Cambios guardados correctamente');
-        console.log('✅ Datos guardados en localStorage');
     });
     
     // Cerrar panel admin
@@ -259,15 +265,24 @@ function renderActividadesAdmin() {
     `).join('');
 }
 
-function deleteActividad(index) {
+async function deleteActividad(index) {
     if (!currentSemana) return;
     
     if (confirm('¿Eliminar esta actividad?')) {
+        console.log('🗑️ Eliminando actividad...');
+        
         currentSemana.actividades.splice(index, 1);
-        localStorage.setItem('portafolio_bd_data', JSON.stringify(currentData));
-        renderSemanas();
-        renderActividadesAdmin();
-        console.log('🗑️ Actividad eliminada');
+        
+        // Guardar en GitHub
+        const success = await GITHUB_API.saveData(currentData);
+        
+        if (success) {
+            renderSemanas();
+            renderActividadesAdmin();
+            console.log('✅ Actividad eliminada');
+        } else {
+            alert('❌ Error al eliminar de GitHub');
+        }
     }
 }
 
