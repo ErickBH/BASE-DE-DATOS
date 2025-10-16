@@ -69,6 +69,7 @@ body {
     width: 60px;
     height: 60px;
     object-fit: contain;
+    filter: brightness(0) invert(0.9);
 }
 
 .user-info h2 {
