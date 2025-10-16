@@ -19,7 +19,8 @@ const GITHUB_API = {
         try {
             console.log(`📤 Subiendo ${fileName} a semana ${semanaNum}...`);
             
-            const path = `semanas/semana-${semanaNum}/${fileName}`;
+            // ✅ CORREGIDO: usar "semana X" en lugar de "semanas/semana-X"
+            const path = `semana ${semanaNum}/${fileName}`;
             
             // Convertir el archivo a base64
             const base64Content = await this.fileToBase64(fileContent);

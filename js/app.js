@@ -98,7 +98,7 @@ function createSemanaCard(semana) {
                 </div>
             ` : ''}
             
-            <a href="https://github.com/ErickBH/BASE-DE-DATOS/tree/main/semana-${semana.numero}" 
+            <a href="https://github.com/ErickBH/BASE-DE-DATOS/tree/main/semana%20${semana.numero}" 
                target="_blank" 
                class="btn-github">
                 🔗 Ver en GitHub
@@ -289,6 +289,35 @@ async function deleteActividad(index) {
 // ============================================
 // VISOR DE PDF
 // ============================================
+function setupPDFModal() {
+    console.log('📄 Configurando visor de PDF...');
+    
+    const modal = document.getElementById('pdfModal');
+    
+    if (!modal) {
+        console.error('❌ No se encontró el modal de PDF');
+        return;
+    }
+    
+    const closeBtn = modal.querySelector('.modal-close');
+    
+    if (closeBtn) {
+        closeBtn.addEventListener('click', () => {
+            modal.style.display = 'none';
+            document.getElementById('pdfViewer').src = '';
+        });
+    }
+    
+    window.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.style.display = 'none';
+            document.getElementById('pdfViewer').src = '';
+        }
+    });
+    
+    console.log('✅ Visor de PDF configurado');
+}
+
 function openPDF(url, nombre) {
     console.log(`📄 Abriendo PDF: ${nombre}`);
     
@@ -303,20 +332,6 @@ function openPDF(url, nombre) {
         const viewerUrl = `https://docs.google.com/viewer?url=${encodeURIComponent(url)}&embedded=true`;
         viewer.src = viewerUrl;
         
-        modal.style.display = 'block';
-    }
-}
-
-function openPDF(url, nombre) {
-    console.log(`📄 Abriendo PDF: ${nombre}`);
-    
-    const modal = document.getElementById('pdfModal');
-    const viewer = document.getElementById('pdfViewer');
-    const title = document.getElementById('pdfTitle');
-    
-    if (modal && viewer && title) {
-        title.textContent = nombre;
-        viewer.src = url;
         modal.style.display = 'block';
     }
 }
