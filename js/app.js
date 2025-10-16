@@ -289,33 +289,22 @@ async function deleteActividad(index) {
 // ============================================
 // VISOR DE PDF
 // ============================================
-function setupPDFModal() {
-    console.log('📄 Configurando visor de PDF...');
+function openPDF(url, nombre) {
+    console.log(`📄 Abriendo PDF: ${nombre}`);
     
     const modal = document.getElementById('pdfModal');
+    const viewer = document.getElementById('pdfViewer');
+    const title = document.getElementById('pdfTitle');
     
-    if (!modal) {
-        console.error('❌ No se encontró el modal de PDF');
-        return;
+    if (modal && viewer && title) {
+        title.textContent = nombre;
+        
+        // Usar visor de Google Docs para PDFs de GitHub
+        const viewerUrl = `https://docs.google.com/viewer?url=${encodeURIComponent(url)}&embedded=true`;
+        viewer.src = viewerUrl;
+        
+        modal.style.display = 'block';
     }
-    
-    const closeBtn = modal.querySelector('.modal-close');
-    
-    if (closeBtn) {
-        closeBtn.addEventListener('click', () => {
-            modal.style.display = 'none';
-            document.getElementById('pdfViewer').src = '';
-        });
-    }
-    
-    window.addEventListener('click', (e) => {
-        if (e.target === modal) {
-            modal.style.display = 'none';
-            document.getElementById('pdfViewer').src = '';
-        }
-    });
-    
-    console.log('✅ Visor de PDF configurado');
 }
 
 function openPDF(url, nombre) {
