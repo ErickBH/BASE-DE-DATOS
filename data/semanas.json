@@ -89,8 +89,8 @@
     },
     {
       "numero": 7,
-      "titulo": "",
-      "descripcion": "",
+      "titulo": "consultas de la semana 7",
+      "descripcion": "Este manual reúne, explica y ejemplifica las consultas SQL más usadas sobre la base de datos QhatuPERU, almacenada en Azure SQL Database.",
       "actividades": [
         {
           "nombre": "cuenta azure",
@@ -111,6 +111,11 @@
           "nombre": "INSERTAR_DATOS",
           "archivo": "INSERTAR_DATOS.pdf",
           "url": "https://raw.githubusercontent.com/ErickBH/BASE-DE-DATOS/main/semana%207/INSERTAR_DATOS.pdf"
+        },
+        {
+          "nombre": "CONSULTAS_SQL",
+          "archivo": "CONSULTAS_SQL.pdf",
+          "url": "https://raw.githubusercontent.com/ErickBH/BASE-DE-DATOS/main/semana%207/CONSULTAS_SQL.pdf"
         }
       ]
     },
