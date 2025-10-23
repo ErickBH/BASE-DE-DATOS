@@ -31,6 +31,11 @@
           "nombre": "EjemploBaseDatos",
           "archivo": "EjemploBaseDatos.pdf",
           "url": "https://raw.githubusercontent.com/ErickBH/BASE-DE-DATOS/main/semana%202/EjemploBaseDatos.pdf"
+        },
+        {
+          "nombre": "Manual_para_instalar_SQL_server",
+          "archivo": "Manual_para_instalar_SQL_server.pdf",
+          "url": "https://raw.githubusercontent.com/ErickBH/BASE-DE-DATOS/main/semana%202/Manual_para_instalar_SQL_server.pdf"
         }
       ]
     },
