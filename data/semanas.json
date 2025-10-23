@@ -91,7 +91,13 @@
       "numero": 7,
       "titulo": "",
       "descripcion": "",
-      "actividades": []
+      "actividades": [
+        {
+          "nombre": "cuenta azure",
+          "archivo": "cuenta azure.pdf",
+          "url": "https://raw.githubusercontent.com/ErickBH/BASE-DE-DATOS/main/semana%207/cuenta%20azure.pdf"
+        }
+      ]
     },
     {
       "numero": 8,
