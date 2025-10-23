@@ -90,7 +90,7 @@
     {
       "numero": 7,
       "titulo": "consultas de la semana 7",
-      "descripcion": "Este manual  explica y ejemplifica las consultas SQL más usadas sobre la base de datos QhatuPERU, almacenada en Azure SQL Database.",
+      "descripcion": "Este manual explica y ejemplifica las consultas SQL mas usadas sobre la base de datos QhatuPERU, almacenada en Azure SQL Database.",
       "actividades": [
         {
           "nombre": "cuenta azure",
