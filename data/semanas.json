@@ -28,11 +28,6 @@
       "descripcion": "El modelo conceptual utilizando el diagrama entidad",
       "actividades": [
         {
-          "nombre": "Manual para instalar SQL server",
-          "archivo": "Manual para instalar SQL server.pdf",
-          "url": "https://raw.githubusercontent.com/ErickBH/BASE-DE-DATOS/main/semana%202/Manual%20para%20instalar%20SQL%20server.pdf"
-        },
-        {
           "nombre": "EjemploBaseDatos",
           "archivo": "EjemploBaseDatos.pdf",
           "url": "https://raw.githubusercontent.com/ErickBH/BASE-DE-DATOS/main/semana%202/EjemploBaseDatos.pdf"
