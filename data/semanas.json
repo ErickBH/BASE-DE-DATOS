@@ -6,11 +6,6 @@
       "descripcion": "Informe  comparativo sobre arquitecturas centralizadas, cliente-servidor y distribuidas",
       "actividades": [
         {
-          "nombre": "github",
-          "archivo": "github.pdf",
-          "url": "https://raw.githubusercontent.com/ErickBH/BASE-DE-DATOS/main/semana%201/github.pdf"
-        },
-        {
           "nombre": "trabajo 1",
           "archivo": "trabajo 1.pdf",
           "url": "https://raw.githubusercontent.com/ErickBH/BASE-DE-DATOS/main/semana%201/trabajo%201.pdf"
