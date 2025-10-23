@@ -96,6 +96,11 @@
           "nombre": "cuenta azure",
           "archivo": "cuenta azure.pdf",
           "url": "https://raw.githubusercontent.com/ErickBH/BASE-DE-DATOS/main/semana%207/cuenta%20azure.pdf"
+        },
+        {
+          "nombre": "base de datos QhatuPERU",
+          "archivo": "base de datos QhatuPERU.pdf",
+          "url": "https://raw.githubusercontent.com/ErickBH/BASE-DE-DATOS/main/semana%207/base%20de%20datos%20QhatuPERU.pdf"
         }
       ]
     },
