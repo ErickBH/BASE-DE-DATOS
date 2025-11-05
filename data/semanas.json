@@ -127,9 +127,15 @@
     },
     {
       "numero": 9,
-      "titulo": "",
+      "titulo": "consultas",
       "descripcion": "",
-      "actividades": []
+      "actividades": [
+        {
+          "nombre": "MANUALDECONSULTAS",
+          "archivo": "MANUALDECONSULTAS.pdf",
+          "url": "https://raw.githubusercontent.com/ErickBH/BASE-DE-DATOS/main/semana%209/MANUALDECONSULTAS.pdf"
+        }
+      ]
     },
     {
       "numero": 10,
