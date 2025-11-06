@@ -141,7 +141,13 @@
       "numero": 10,
       "titulo": "",
       "descripcion": "",
-      "actividades": []
+      "actividades": [
+        {
+          "nombre": "ADMINISTRACIÓN DE SERVIDORES",
+          "archivo": "ADMINISTRACIÓN DE SERVIDORES.pdf",
+          "url": "https://raw.githubusercontent.com/ErickBH/BASE-DE-DATOS/main/semana%2010/ADMINISTRACIÓN DE SERVIDORES.pdf"
+        }
+      ]
     },
     {
       "numero": 11,
