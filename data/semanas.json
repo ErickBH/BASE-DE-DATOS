@@ -156,9 +156,15 @@
     },
     {
       "numero": 11,
-      "titulo": "",
-      "descripcion": "",
-      "actividades": []
+      "titulo": "SEGURIDAD Y CONTROL DE ACCESO",
+      "descripcion": "La seguridad en una base de datos es un aspecto fundamental para garantizar la confidencialidad, integridad y disponibilidad de la informacion",
+      "actividades": [
+        {
+          "nombre": "SEGURIDAD Y CONTROL DE ACCESO",
+          "archivo": "SEGURIDAD Y CONTROL DE ACCESO.pdf",
+          "url": "https://raw.githubusercontent.com/ErickBH/BASE-DE-DATOS/main/semana%2011/SEGURIDAD%20Y%20CONTROL%20DE%20ACCESO.pdf"
+        }
+      ]
     },
     {
       "numero": 12,
