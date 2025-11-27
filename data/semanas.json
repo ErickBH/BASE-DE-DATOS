@@ -174,9 +174,15 @@
     },
     {
       "numero": 13,
-      "titulo": "",
+      "titulo": "MONITOREO Y RENDIMIENTO",
       "descripcion": "",
-      "actividades": []
+      "actividades": [
+        {
+          "nombre": "MONITOREO Y RENDIMIENTO",
+          "archivo": "MONITOREO Y RENDIMIENTO.pdf",
+          "url": "https://raw.githubusercontent.com/ErickBH/BASE-DE-DATOS/main/semana%2013/MONITOREO%20Y%20RENDIMIENTO.pdf"
+        }
+      ]
     },
     {
       "numero": 14,
