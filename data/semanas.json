@@ -186,7 +186,7 @@
     {
       "numero": 13,
       "titulo": "MONITOREO Y RENDIMIENTO",
-      "descripcion": "",
+      "descripcion": "consiste en la supervisión continua de los recursos, procesos y servicios para detectar problemas, cuellos de botella o fallos antes de que afecten a los usuarios.",
       "actividades": [
         {
           "nombre": "MONITOREO Y RENDIMIENTO",
