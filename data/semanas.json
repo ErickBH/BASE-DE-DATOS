@@ -140,7 +140,7 @@
     {
       "numero": 10,
       "titulo": "ADMINISTRACION DE SERVIDORES  Y GESTION DE BASES DE DATOS",
-      "descripcion": "",
+      "descripcion": "implica la configuracion, mantenimiento, monitoreo y optimizacion de los servidores para asegurar su correcto funcionamiento, alta disponibilidad y seguridad frente a posibles fallos o ataques.",
       "actividades": [
         {
           "nombre": "DESARROLLO DE DIEZ PROYECTOS PRACTICOS",
