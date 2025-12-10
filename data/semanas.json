@@ -214,7 +214,7 @@
     },
     {
       "numero": 15,
-      "titulo": "",
+      "titulo": "Azure SQL",
       "descripcion": "Azure SQL Database facilita la automatizacion de tareas como actualizaciones, respaldos y ajustes de rendimiento, permitiendo a las empresas centrarse en el desarrollo de aplicaciones y en el analisis de datos.",
       "actividades": [
         {
