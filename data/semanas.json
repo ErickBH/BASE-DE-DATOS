@@ -226,9 +226,15 @@
     },
     {
       "numero": 16,
-      "titulo": "",
-      "descripcion": "",
-      "actividades": []
+      "titulo": "ALTA DISPONIBILIDAD Y RECUPERACION ANTE DESASTRES (HA/DR)",
+      "descripcion": "se refiere a la capacidad de un sistema para mantenerse operativo durante el mayor tiempo posible, minimizando tiempos de inactividad debido a fallos de hardware, software o errores humanos.",
+      "actividades": [
+        {
+          "nombre": "Alta disponibilidad y recuperacion",
+          "archivo": "Alta disponibilidad y recuperacion.pdf",
+          "url": "https://raw.githubusercontent.com/ErickBH/BASE-DE-DATOS/main/semana%2016/Alta%20disponibilidad%20y%20recuperacion.pdf"
+        }
+      ]
     }
   ]
 }
