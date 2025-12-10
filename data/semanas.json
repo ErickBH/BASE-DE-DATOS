@@ -127,8 +127,8 @@
     },
     {
       "numero": 9,
-      "titulo": "consultas",
-      "descripcion": "",
+      "titulo": "CONSULTAS OBTENER, AGRUPAR Y ANALIZAR INFORMACION",
+      "descripcion": "En la gestion de bases de datos, es fundamental poder extraer y analizar informacion de manera eficiente. Las consultas permiten obtener datos especificos segun criterios definidos, facilitando la toma de decisiones basadas en informacion real.",
       "actividades": [
         {
           "nombre": "MANUALDECONSULTAS",
