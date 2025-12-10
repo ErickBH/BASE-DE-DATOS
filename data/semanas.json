@@ -173,7 +173,7 @@
     },
     {
       "numero": 12,
-      "titulo": "",
+      "titulo": "RESPALDO Y RECUPERACION DE  BASE DE DATOS",
       "descripcion": "El respaldo y recuperacion de bases de datos es un proceso fundamental en la administracion de sistemas de informacion. Consiste en crear copias de seguridad de la informacion almacenada para protegerla ante posibles fallos del sistema, errores humanos, corrupcion de datos o desastres naturales.",
       "actividades": [
         {
