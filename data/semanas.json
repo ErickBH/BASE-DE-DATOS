@@ -216,7 +216,13 @@
       "numero": 15,
       "titulo": "Azure SQL",
       "descripcion": "Azure SQL Database facilita la automatizacion de tareas como actualizaciones, respaldos y ajustes de rendimiento, permitiendo a las empresas centrarse en el desarrollo de aplicaciones y en el analisis de datos.",
-      "actividades": []
+      "actividades": [
+        {
+          "nombre": "Azure_SQL_Database",
+          "archivo": "Azure_SQL_Database.pdf",
+          "url": "https://raw.githubusercontent.com/ErickBH/BASE-DE-DATOS/main/semana%2015/Azure_SQL_Database.pdf"
+        }
+      ]
     },
     {
       "numero": 16,
